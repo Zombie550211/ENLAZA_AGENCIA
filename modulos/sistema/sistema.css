@@ -1,0 +1,25 @@
+/* MÓDULO: SISTEMA — franja con los módulos del CRM desplazándose */
+.sistema { padding: 40px 0 20px; border-block: 1px solid rgba(255,255,255,.05); background: rgba(255,255,255,.012); }
+.sistema__titulo { text-align: center; color: var(--texto-3); font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; font-weight: 600; }
+.sistema__carril {
+  display: flex; overflow: hidden; margin-top: 22px; padding-bottom: 20px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.sistema__lista {
+  list-style: none; margin: 0; padding: 0 12px 0 0; display: flex; gap: 12px; flex: none;
+  animation: carril 38s linear infinite;
+}
+.sistema__lista li {
+  display: inline-flex; align-items: center; gap: 10px; white-space: nowrap;
+  padding: 12px 20px; border-radius: 999px; font-weight: 500; color: #c9d3ee;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+}
+.sistema__lista svg { width: 18px; height: 18px; color: var(--cian); }
+.sistema__carril:hover .sistema__lista { animation-play-state: paused; }
+@keyframes carril { to { transform: translateX(-100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .sistema__lista { animation: none; }
+  .sistema__carril { flex-wrap: wrap; justify-content: center; }
+  .sistema__lista[aria-hidden] { display: none; }
+}

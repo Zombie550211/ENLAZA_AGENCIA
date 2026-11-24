@@ -1,0 +1,9 @@
+# Solicitudes del formulario: contienen datos personales, nunca se suben
+datos/*.csv
+
+# Archivos del sistema y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
