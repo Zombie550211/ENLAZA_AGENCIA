@@ -1,0 +1,8 @@
+/* MÓDULO: FOOTER */
+.footer { padding: 32px 0; font-size: .86rem; border-top: 1px solid rgba(255,255,255,.06); }
+.footer__fila { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; }
+.footer .marca img { height: 38px; }
+.footer nav { display: flex; flex-wrap: wrap; gap: 20px; }
+.footer nav a { color: var(--texto-2); transition: color .2s; }
+.footer nav a:hover { color: var(--texto); }
+.footer__copy { color: var(--texto-3); }

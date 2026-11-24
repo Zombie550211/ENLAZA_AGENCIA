@@ -1,0 +1,32 @@
+/* MÓDULO: PROCESO — cómo trabajamos */
+.proceso { overflow: hidden; }
+.proceso__brillo { width: 700px; height: 460px; left: 50%; top: 35%; translate: -50% 0; background: rgba(47,123,255,.18); }
+
+.proceso__pasos {
+  position: relative; z-index: 1; list-style: none; padding: 0; margin: 64px 0 0;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+}
+/* Línea que conecta los pasos */
+.proceso__pasos::before {
+  content: ""; position: absolute; left: 6%; right: 6%; top: 52px; height: 1px; z-index: -1;
+  background: linear-gradient(90deg, transparent, rgba(47,123,255,.6), rgba(34,211,238,.6), transparent);
+}
+.proceso__paso { padding: 28px 24px; }
+.proceso__num {
+  display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 14px;
+  font: 700 1rem var(--fuente-titulo); color: #fff;
+  background: linear-gradient(135deg, var(--azul), var(--cian));
+  box-shadow: 0 10px 30px -8px rgba(47,123,255,.8);
+}
+.proceso__paso h3 { font-size: 1.2rem; margin-top: 22px; letter-spacing: -0.02em; }
+.proceso__paso p { color: var(--texto-2); font-size: .94rem; margin-top: 8px; }
+
+.proceso__cta { position: relative; z-index: 1; text-align: center; margin-top: 48px; }
+
+@media (max-width: 960px) {
+  .proceso__pasos { grid-template-columns: 1fr 1fr; }
+  .proceso__pasos::before { display: none; }
+}
+@media (max-width: 560px) {
+  .proceso__pasos { grid-template-columns: 1fr; }
+}
