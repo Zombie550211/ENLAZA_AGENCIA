@@ -1,0 +1,6 @@
+.git
+iniciar.bat
+datos/*.csv
+Dockerfile
+.dockerignore
+render.yaml
