@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enlaza — Sistemas web a la medida para call center</title>
+  <meta name="description" content="Enlaza S.A. de C.V. diseña y desarrolla sistemas web a la medida para call centers: CRM, reportes, comisiones y supervisión de equipos." />
+  <link rel="icon" href="assets/img/logo-enlaza.png" />
+  <meta name="theme-color" content="#05070f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="base/base.css" />
+  <link rel="stylesheet" href="modulos/header/header.css" />
+  <link rel="stylesheet" href="modulos/hero/hero.css" />
+  <link rel="stylesheet" href="modulos/sistema/sistema.css" />
+  <link rel="stylesheet" href="modulos/antes/antes.css" />
+  <link rel="stylesheet" href="modulos/proceso/proceso.css" />
+  <link rel="stylesheet" href="modulos/faq/faq.css" />
+  <link rel="stylesheet" href="modulos/contacto/contacto.css" />
+  <link rel="stylesheet" href="modulos/footer/footer.css" />
+</head>
+<body>
+
+<!-- ===================== MÓDULO: HEADER ===================== -->
+<header class="header">
+  <div class="contenedor header__barra">
+    <a href="#" class="header__logo" aria-label="Enlaza, inicio"><span class="marca"><img src="assets/img/logo-enlaza-blanco.png" alt="Enlaza S.A. de C.V. — Licencias y Soluciones Web para Call Center" width="446" height="124" /></span></a>
+    <nav class="header__nav" aria-label="Principal">
+      <a href="#plataforma">Soluciones</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <div class="header__acciones">
+      <a href="#demo" class="btn btn--primario">Cuéntanos tu proyecto</a>
+    </div>
+    <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+<!-- ===================== MÓDULO: HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="cuadricula"></div>
+  <div class="brillo hero__brillo1"></div>
+  <div class="brillo hero__brillo2"></div>
+
+  <div class="contenedor hero__grid">
+  <div class="hero__texto">
+    <span class="etiqueta entra" style="--d:.05s">Licencias y soluciones web para call center</span>
+    <h1 class="hero__titulo">
+      <span class="degradado entra" style="--d:.15s">Sistemas web</span>
+      <span class="degradado entra" style="--d:.27s">a la medida</span>
+      <span class="degradado-azul entra" style="--d:.39s">para tu call center.</span>
+    </h1>
+    <p class="hero__sub entra" style="--d:.55s">Diseñamos y desarrollamos el software que tu operación necesita: clientes, ventas, reportes, comisiones y equipos, hecho para tu forma de trabajar.</p>
+    <div class="hero__botones entra" style="--d:.7s">
+      <a href="#demo" class="btn btn--primario btn--lg">Cuéntanos tu proyecto <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#proceso" class="btn btn--vidrio btn--lg">Cómo trabajamos</a>
+    </div>
+  </div>
+
+  <!-- Ilustración genérica (no es ningún sistema real): panel abstracto + ventana de código -->
+  <div class="hero__escena entra-escena" aria-hidden="true">
+    <div class="hero__marco" id="hero-marco">
+      <div class="pantalla">
+        <div class="ui">
+          <aside class="ui__lateral"><span class="ui__logo"></span><i class="activo"></i><i></i><i></i><i></i><i></i></aside>
+          <div class="ui__main">
+            <div class="ui__barra"><span class="ui__buscar"></span><span class="ui__avatar"></span></div>
+            <div class="ui__kpis">
+              <div class="ui__kpi"><span class="ui__linea" style="width:55%"></span><b></b><em class="sube"></em></div>
+              <div class="ui__kpi"><span class="ui__linea" style="width:40%"></span><b></b><em class="sube"></em></div>
+              <div class="ui__kpi"><span class="ui__linea" style="width:62%"></span><b></b><em></em></div>
+              <div class="ui__kpi"><span class="ui__linea" style="width:48%"></span><b></b><em class="sube"></em></div>
+            </div>
+            <div class="ui__fila">
+              <div class="ui__card ui__grafica">
+                <span class="ui__linea" style="width:30%"></span>
+                <svg viewBox="0 0 400 140" preserveAspectRatio="none">
+                  <defs><linearGradient id="g-area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f7bff" stop-opacity=".45"/><stop offset="1" stop-color="#2f7bff" stop-opacity="0"/></linearGradient></defs>
+                  <path d="M0 110 C40 100 60 70 100 78 S160 40 200 52 S260 90 300 50 S360 20 400 28 V140 H0Z" fill="url(#g-area)"/>
+                  <path id="linea-ventas" class="ui__trazo" d="M0 110 C40 100 60 70 100 78 S160 40 200 52 S260 90 300 50 S360 20 400 28" fill="none" stroke="#22d3ee" stroke-width="3"/>
+                  <!-- punto de luz que recorre la línea -->
+                  <circle class="ui__punto" r="5" fill="#ffffff" opacity="0">
+                    <set attributeName="opacity" to="1" begin="2.6s" />
+                    <animateMotion dur="5s" begin="2.6s" repeatCount="indefinite"><mpath href="#linea-ventas" /></animateMotion>
+                  </circle>
+                </svg>
+              </div>
+              <div class="ui__card ui__barras">
+                <span class="ui__linea" style="width:45%"></span>
+                <div><i style="--h:55%"></i><i style="--h:80%"></i><i style="--h:42%"></i><i style="--h:92%"></i><i style="--h:66%"></i><i style="--h:74%"></i></div>
+              </div>
+            </div>
+            <div class="ui__card ui__tabla">
+                              <div class="ui__renglon"><span class="ui__circulo"></span><span class="ui__linea" style="width:38%"></span><span class="ui__linea ui__linea--tenue" style="width:22%"></span><span class="ui__pill ui__pill--verde"></span></div>
+                              <div class="ui__renglon"><span class="ui__circulo"></span><span class="ui__linea" style="width:30%"></span><span class="ui__linea ui__linea--tenue" style="width:28%"></span><span class="ui__pill ui__pill--ambar"></span></div>
+                              <div class="ui__renglon"><span class="ui__circulo"></span><span class="ui__linea" style="width:44%"></span><span class="ui__linea ui__linea--tenue" style="width:18%"></span><span class="ui__pill ui__pill--verde"></span></div>
+                              <div class="ui__renglon"><span class="ui__circulo"></span><span class="ui__linea" style="width:34%"></span><span class="ui__linea ui__linea--tenue" style="width:25%"></span><span class="ui__pill ui__pill--azul"></span></div>
+                          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ventana de código flotante: "lo construimos para ti" -->
+      <div class="hero__codigo">
+        <div class="hero__codigo-barra"><i></i><i></i><i></i><span>comisiones.js</span></div>
+<pre><code id="hero-codigo"><span class="c-k">const</span> <span class="c-v">comision</span> = <span class="c-f">calcular</span>({
+  ventas: <span class="c-v">equipo</span>.ventas,
+  regla: <span class="c-s">"tu esquema"</span>,
+});</code></pre>
+      </div>
+      <div class="hero__chip"><i></i><b>Hecho a tu medida</b></div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- ===================== MÓDULO: SISTEMA (franja de módulos) ===================== -->
+<section class="sistema" aria-label="Lo que desarrollamos">
+  <p class="sistema__titulo">Lo que podemos construir para tu operación</p>
+  <div class="sistema__carril">
+          <ul class="sistema__lista" >
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            CRM y gestión de clientes          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            Tableros y reportes          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+            Rankings y metas          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Cálculo de comisiones          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+            Personal y turnos          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            Apps web para celular          </li>
+              </ul>
+          <ul class="sistema__lista" aria-hidden="true">
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            CRM y gestión de clientes          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            Tableros y reportes          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+            Rankings y metas          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Cálculo de comisiones          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+            Personal y turnos          </li>
+                  <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            Apps web para celular          </li>
+              </ul>
+      </div>
+</section>
+<!-- ===================== MÓDULO: ANTES / BENEFICIOS ===================== -->
+<section class="seccion antes" id="plataforma">
+  <div class="brillo antes__brillo"></div>
+  <div class="contenedor">
+    <div class="cabeza cabeza--centro revelar">
+      <span class="etiqueta">Deja atrás las hojas de cálculo</span>
+      <h2 class="titulo">¿Sigues administrando tu empresa <span class="degradado-azul">con Excel?</span></h2>
+      <p class="subtitulo">Digitaliza tu operación con un sistema diseñado a tu medida y para crecer contigo.</p>
+    </div>
+
+    <div class="antes__grid">
+      <!-- Antes -->
+      <article class="vidrio antes__tarjeta antes__tarjeta--antes revelar">
+        <span class="antes__marca antes__marca--mal">Antes</span>
+        <h3>Archivos sueltos y datos duplicados</h3>
+        <ul class="antes__lista">
+          <li>Un Excel por supervisor, ninguno coincide</li>
+          <li>Ventas repetidas y comisiones mal calculadas</li>
+          <li>Reportes que llegan días tarde</li>
+        </ul>
+        <div class="hoja" aria-hidden="true">
+                      <span class=""><i style="width:50%"></i></span>
+                      <span class=""><i style="width:52%"></i></span>
+                      <span class="a"><i style="width:41%"></i></span>
+                      <span class="a"><i style="width:45%"></i></span>
+                      <span class="a"><i style="width:47%"></i></span>
+                      <span class=""><i style="width:85%"></i></span>
+                      <span class=""><i style="width:31%"></i></span>
+                      <span class=""><i style="width:80%"></i></span>
+                      <span class=""><i style="width:54%"></i></span>
+                      <span class="a"><i style="width:52%"></i></span>
+                      <span class="r"><i style="width:54%"></i></span>
+                      <span class="r"><i style="width:61%"></i></span>
+                      <span class=""><i style="width:46%"></i></span>
+                      <span class=""><i style="width:61%"></i></span>
+                      <span class=""><i style="width:68%"></i></span>
+                      <span class=""><i style="width:42%"></i></span>
+                      <span class=""><i style="width:77%"></i></span>
+                      <span class=""><i style="width:62%"></i></span>
+                      <span class=""><i style="width:53%"></i></span>
+                      <span class=""><i style="width:54%"></i></span>
+                      <span class=""><i style="width:51%"></i></span>
+                      <span class=""><i style="width:40%"></i></span>
+                      <span class=""><i style="width:63%"></i></span>
+                      <span class=""><i style="width:84%"></i></span>
+                      <span class=""><i style="width:84%"></i></span>
+                      <span class=""><i style="width:61%"></i></span>
+                      <span class=""><i style="width:81%"></i></span>
+                      <span class=""><i style="width:57%"></i></span>
+                      <span class=""><i style="width:63%"></i></span>
+                      <span class=""><i style="width:46%"></i></span>
+                      <span class=""><i style="width:37%"></i></span>
+                      <span class=""><i style="width:82%"></i></span>
+                      <span class=""><i style="width:50%"></i></span>
+                      <span class=""><i style="width:85%"></i></span>
+                      <span class=""><i style="width:71%"></i></span>
+                      <span class=""><i style="width:46%"></i></span>
+                      <span class=""><i style="width:53%"></i></span>
+                      <span class="a"><i style="width:66%"></i></span>
+                      <span class="r"><i style="width:62%"></i></span>
+                      <span class=""><i style="width:34%"></i></span>
+                      <span class=""><i style="width:31%"></i></span>
+                      <span class=""><i style="width:81%"></i></span>
+                      <span class=""><i style="width:31%"></i></span>
+                      <span class=""><i style="width:65%"></i></span>
+                      <span class=""><i style="width:41%"></i></span>
+                      <span class=""><i style="width:49%"></i></span>
+                      <span class="r"><i style="width:31%"></i></span>
+                      <span class=""><i style="width:47%"></i></span>
+                  </div>
+      </article>
+
+      <!-- Con un sistema a la medida -->
+      <article class="vidrio antes__tarjeta antes__tarjeta--enlaza revelar">
+        <span class="antes__marca antes__marca--bien">Con un sistema a tu medida</span>
+        <h3>Toda tu operación en un solo lugar</h3>
+        <ul class="antes__lista antes__lista--bien">
+          <li>Una sola base de datos para todo el equipo</li>
+          <li>Procesos automatizados: reportes, comisiones, seguimientos</li>
+          <li>Accesos por rol: cada quien ve lo que necesita</li>
+        </ul>
+        <!-- Ilustración genérica: tabla ordenada -->
+        <div class="orden" aria-hidden="true">
+          <div class="orden__cabeza"><span></span><span></span><span></span><span></span></div>
+                      <div class="orden__fila" style="--d: 0ms"><span class="orden__c"></span><span class="orden__l" style="width:70%"></span><span class="orden__l orden__l--t" style="width:50%"></span><span class="orden__p orden__p--verde"></span></div>
+                      <div class="orden__fila" style="--d: 90ms"><span class="orden__c"></span><span class="orden__l" style="width:55%"></span><span class="orden__l orden__l--t" style="width:66%"></span><span class="orden__p orden__p--ambar"></span></div>
+                      <div class="orden__fila" style="--d: 180ms"><span class="orden__c"></span><span class="orden__l" style="width:80%"></span><span class="orden__l orden__l--t" style="width:40%"></span><span class="orden__p orden__p--verde"></span></div>
+                      <div class="orden__fila" style="--d: 270ms"><span class="orden__c"></span><span class="orden__l" style="width:62%"></span><span class="orden__l orden__l--t" style="width:58%"></span><span class="orden__p orden__p--azul"></span></div>
+                      <div class="orden__fila" style="--d: 360ms"><span class="orden__c"></span><span class="orden__l" style="width:48%"></span><span class="orden__l orden__l--t" style="width:72%"></span><span class="orden__p orden__p--verde"></span></div>
+                  </div>
+      </article>
+    </div>
+
+    <!-- ===== Beneficios (cuadrícula de tamaños distintos, cada tarjeta con su ilustración animada) ===== -->
+    <div class="beneficios">
+      <div class="beneficios__separador revelar">
+        <span>Lo que ganas con un sistema a la medida</span>
+      </div>
+
+            <div class="bento">
+
+        <!-- 1. Se adapta a tu proceso (ancha) -->
+        <article class="vidrio bento__celda bento__celda--ancha revelar">
+                    <div class="bento__texto">
+            <span class="bento__icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <h3>Se adapta a tu proceso</h3>
+            <p>El sistema trabaja como tu operación, no al revés. Nada de forzar a tu equipo a cambiar su forma de vender.</p>
+          </div>
+          <div class="flujo" aria-hidden="true">
+                                        <span class="flujo__nodo" style="--n: 0"><i></i>Prospecto</span>
+                          <span class="flujo__linea" style="--n: 1"></span>              <span class="flujo__nodo" style="--n: 1"><i></i>Venta</span>
+                          <span class="flujo__linea" style="--n: 2"></span>              <span class="flujo__nodo" style="--n: 2"><i></i>Validación</span>
+                          <span class="flujo__linea" style="--n: 3"></span>              <span class="flujo__nodo" style="--n: 3"><i></i>Comisión</span>
+                      </div>
+          <div class="flujo__chips" aria-hidden="true"><span>Tus etapas</span><span>Tus reglas</span><span>Tus nombres</span></div>
+        </article>
+
+        <!-- 2. Una sola fuente de verdad (alta) -->
+        <article class="vidrio bento__celda bento__celda--alta revelar" style="transition-delay:.1s">
+                    <div class="bento__texto">
+            <span class="bento__icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+            <h3>Una sola fuente de verdad</h3>
+            <p>Clientes, ventas y equipos en una misma base de datos. Se acabaron las versiones distintas del mismo archivo.</p>
+          </div>
+          <div class="fuente" aria-hidden="true">
+            <svg class="fuente__lineas" viewBox="0 0 300 300" preserveAspectRatio="none">
+                              <line x1="96" y1="30" x2="150" y2="150" />
+                              <line x1="192" y1="84" x2="150" y2="150" />
+                              <line x1="84" y1="222" x2="150" y2="150" />
+                              <line x1="216" y1="270" x2="150" y2="150" />
+                          </svg>
+            <span class="fuente__archivo" style="left:32%;top:10%">ventas.xlsx</span>
+            <span class="fuente__archivo" style="left:64%;top:28%">ventas_2.xlsx</span>
+            <span class="fuente__archivo" style="left:28%;top:74%">clientes.xlsx</span>
+            <span class="fuente__archivo" style="left:72%;top:90%">notas.txt</span>
+            <span class="fuente__centro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+          </div>
+        </article>
+
+        <!-- 3. Automatiza lo repetitivo -->
+        <article class="vidrio bento__celda revelar" style="transition-delay:.2s">
+                    <div class="bento__texto">
+            <h3>Automatiza lo repetitivo</h3>
+            <p>Reportes, comisiones y seguimientos se generan solos. Tu equipo dedica su tiempo a vender, no a capturar.</p>
+          </div>
+          <ul class="auto" aria-hidden="true">
+                          <li style="--n: 0"><span class="auto__switch"></span>Reporte diario<em>Listo</em></li>
+                          <li style="--n: 1"><span class="auto__switch"></span>Cálculo de comisiones<em>Listo</em></li>
+                          <li style="--n: 2"><span class="auto__switch"></span>Recordatorio de seguimiento<em>Listo</em></li>
+                      </ul>
+        </article>
+
+        <!-- 4. Decisiones con datos -->
+        <article class="vidrio bento__celda revelar">
+                    <div class="bento__texto">
+            <h3>Decisiones con datos</h3>
+            <p>Indicadores claros por día, equipo y agente para actuar a tiempo, no cuando el mes ya se perdió.</p>
+          </div>
+          <div class="datos" aria-hidden="true">
+            <svg viewBox="0 0 220 90" preserveAspectRatio="none">
+              <defs><linearGradient id="g-datos" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22d3ee" stop-opacity=".35"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 78 L30 70 L60 74 L90 56 L120 60 L150 38 L180 42 L220 14 V90 H0Z" fill="url(#g-datos)"/>
+              <path class="datos__linea" d="M0 78 L30 70 L60 74 L90 56 L120 60 L150 38 L180 42 L220 14" fill="none" stroke="#22d3ee" stroke-width="2.5"/>
+            </svg>
+            <span class="datos__punto"></span>
+            <span class="datos__badge">▲ Al alza</span>
+          </div>
+        </article>
+
+        <!-- 5. Menos errores -->
+        <article class="vidrio bento__celda revelar" style="transition-delay:.1s">
+                    <div class="bento__texto">
+            <h3>Menos errores</h3>
+            <p>Validaciones y cálculos automáticos evitan capturas duplicadas, fórmulas rotas y pagos mal calculados.</p>
+          </div>
+          <div class="valida" aria-hidden="true">
+            <span class="valida__campo"><span class="valida__etq">Folio de venta</span><b>VTA-0001</b></span>
+            <span class="valida__estado valida__estado--mal">✕ Duplicado</span>
+            <span class="valida__estado valida__estado--bien">✓ Validado</span>
+          </div>
+        </article>
+
+        <!-- 6. Crece contigo -->
+        <article class="vidrio bento__celda revelar" style="transition-delay:.2s">
+                    <div class="bento__texto">
+            <h3>Crece contigo</h3>
+            <p>Empieza con lo esencial y agrega nuevos módulos cuando tu operación lo necesite.</p>
+          </div>
+          <div class="crece" aria-hidden="true">
+            <span class="base" style="--n: 0"></span><span class="base" style="--n: 1"></span><span class="base" style="--n: 2"></span><span class="" style="--n: 3"></span><span class="" style="--n: 4"></span><span class="" style="--n: 5"></span><span class="" style="--n: 6"></span><span class="" style="--n: 7"></span>          </div>
+        </article>
+
+        <!-- Fila final: lo que también incluye -->
+                  <article class="vidrio bento__celda bento__mini revelar" style="transition-delay: 0ms">
+            <span class="bento__mini-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div><h3>Supervisión y calidad</h3><p>Rankings, metas por equipo y auditoría de llamadas.</p></div>
+          </article>
+                  <article class="vidrio bento__celda bento__mini revelar" style="transition-delay: 90ms">
+            <span class="bento__mini-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7H6a5 5 0 0 0 0 10h3M15 7h3a5 5 0 0 1 0 10h-3M8 12h8"/></svg></span>
+            <div><h3>Integraciones</h3><p>Conectamos tu sistema con Excel, telefonía u otras plataformas.</p></div>
+          </article>
+                  <article class="vidrio bento__celda bento__mini revelar" style="transition-delay: 180ms">
+            <span class="bento__mini-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <div><h3>Accesos por rol</h3><p>Agentes, supervisores y dirección ven solo lo que les toca.</p></div>
+          </article>
+                  <article class="vidrio bento__celda bento__mini revelar" style="transition-delay: 270ms">
+            <span class="bento__mini-icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></span>
+            <div><h3>Desde el navegador</h3><p>Nada que instalar: oficina o celular.</p></div>
+          </article>
+        
+      </div>
+    </div>
+
+    <!-- ===== Comparativo ===== -->
+    <div class="comparativo revelar">
+      <div class="comparativo__cabeza">
+        <h3>A la medida vs. software genérico</h3>
+        <p>Lo que cambia cuando el sistema se construye para ti.</p>
+      </div>
+      <div class="vidrio comparativo__tabla" role="table" aria-label="Comparativo entre un sistema a la medida y un software genérico">
+        <span class="comparativo__resalte" aria-hidden="true"></span>
+        <div class="comparativo__fila comparativo__fila--titulos" role="row">
+          <span role="columnheader"></span>
+          <span role="columnheader" class="comparativo__col-medida">A la medida</span>
+          <span role="columnheader">Software genérico</span>
+        </div>
+                  <div class="comparativo__fila" role="row">
+            <span role="rowheader" class="comparativo__aspecto">Se ajusta a tu forma de trabajar</span>
+            <span role="cell" class="comparativo__si">Hecho sobre tu proceso</span>
+            <span role="cell" class="comparativo__no">Tú te ajustas al software</span>
+          </div>
+                  <div class="comparativo__fila" role="row">
+            <span role="rowheader" class="comparativo__aspecto">Funciones</span>
+            <span role="cell" class="comparativo__si">Solo las que tu operación usa</span>
+            <span role="cell" class="comparativo__no">Muchas que nadie usa</span>
+          </div>
+                  <div class="comparativo__fila" role="row">
+            <span role="rowheader" class="comparativo__aspecto">Reglas propias (comisiones, metas, estatus)</span>
+            <span role="cell" class="comparativo__si">Programadas como las necesitas</span>
+            <span role="cell" class="comparativo__no">Limitadas a lo que trae</span>
+          </div>
+                  <div class="comparativo__fila" role="row">
+            <span role="rowheader" class="comparativo__aspecto">Integración con tus herramientas</span>
+            <span role="cell" class="comparativo__si">Se diseña desde el inicio</span>
+            <span role="cell" class="comparativo__no">Depende del proveedor</span>
+          </div>
+                  <div class="comparativo__fila" role="row">
+            <span role="rowheader" class="comparativo__aspecto">Cambios y nuevas funciones</span>
+            <span role="cell" class="comparativo__si">Se agregan cuando las necesitas</span>
+            <span role="cell" class="comparativo__no">Esperas a que el proveedor las saque</span>
+          </div>
+              </div>
+    </div>
+
+    <div class="antes__cta revelar">
+      <a href="#demo" class="btn btn--primario btn--lg">Quiero un sistema a mi medida <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- ===================== MÓDULO: PROCESO (cómo trabajamos) ===================== -->
+<section class="seccion proceso" id="proceso">
+  <div class="brillo proceso__brillo"></div>
+  <div class="contenedor">
+    <div class="cabeza cabeza--centro revelar">
+      <span class="etiqueta">Cómo trabajamos</span>
+      <h2 class="titulo">De tu idea a <span class="degradado-azul">un sistema funcionando.</span></h2>
+      <p class="subtitulo">Un proceso claro, con avances visibles en cada etapa.</p>
+    </div>
+
+    <ol class="proceso__pasos">
+              <li class="vidrio proceso__paso revelar" style="transition-delay: 0ms">
+          <span class="proceso__num">01</span>
+          <h3>Diagnóstico</h3>
+          <p>Conocemos tu operación: cómo vendes, cómo mides y qué te está costando tiempo hoy.</p>
+        </li>
+              <li class="vidrio proceso__paso revelar" style="transition-delay: 100ms">
+          <span class="proceso__num">02</span>
+          <h3>Diseño</h3>
+          <p>Definimos contigo pantallas, reglas y reportes antes de escribir una línea de código.</p>
+        </li>
+              <li class="vidrio proceso__paso revelar" style="transition-delay: 200ms">
+          <span class="proceso__num">03</span>
+          <h3>Desarrollo</h3>
+          <p>Construimos el sistema por etapas para que veas avances y los ajustes a tiempo.</p>
+        </li>
+              <li class="vidrio proceso__paso revelar" style="transition-delay: 300ms">
+          <span class="proceso__num">04</span>
+          <h3>Implementación y soporte</h3>
+          <p>Lo ponemos en marcha con tu equipo y te acompañamos después del arranque.</p>
+        </li>
+          </ol>
+
+    <div class="proceso__cta revelar">
+      <a href="#demo" class="btn btn--primario btn--lg">Agenda tu diagnóstico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+<!-- ===================== MÓDULO: FAQ ===================== -->
+<section class="seccion" id="preguntas">
+  <div class="contenedor">
+    <div class="cabeza cabeza--centro revelar"><span class="etiqueta">Dudas</span><h2 class="titulo">Preguntas frecuentes</h2></div>
+    <div class="faq__lista">
+              <details class="faq__item revelar">
+          <summary>¿Necesito instalar algo?</summary>
+          <p>No. Desarrollamos sistemas web: se usan desde el navegador, en computadora o celular.</p>
+        </details>
+              <details class="faq__item revelar">
+          <summary>¿Cuánto tarda un proyecto?</summary>
+          <p>Depende del alcance. Después del diagnóstico te entregamos una propuesta con etapas y tiempos.</p>
+        </details>
+              <details class="faq__item revelar">
+          <summary>¿Pueden pasar mi información de Excel al sistema nuevo?</summary>
+          <p>[Confirmar: migración de datos incluida o como servicio adicional].</p>
+        </details>
+              <details class="faq__item revelar">
+          <summary>¿Mis datos están seguros?</summary>
+          <p>[Describir respaldos, cifrado y dónde se alojan los datos].</p>
+        </details>
+              <details class="faq__item revelar">
+          <summary>¿Ofrecen capacitación?</summary>
+          <p>Sí, acompañamos a tu equipo en el arranque. [Detallar modalidad].</p>
+        </details>
+          </div>
+  </div>
+</section>
+<!-- ===================== MÓDULO: CONTACTO / CIERRE ===================== -->
+<section class="contacto" id="demo">
+  <div class="cuadricula"></div>
+  <div class="brillo contacto__brillo"></div>
+  <div class="contenedor contacto__grid">
+    <div class="revelar">
+      <span class="etiqueta">Hablemos de tu proyecto</span>
+      <h2 class="titulo">Tu empresa está lista para <span class="degradado-azul">el siguiente nivel.</span></h2>
+      <p class="subtitulo">Déjanos tus datos y te contactamos para entender qué necesita tu operación.</p>
+      <ul class="contacto__puntos">
+        <li>Revisamos cómo trabaja hoy tu operación</li>
+        <li>Te proponemos alcance, etapas y tiempos</li>
+        <li>Sin compromiso</li>
+      </ul>
+    </div>
+
+    <div class="vidrio contacto__caja revelar">
+      <form class="form" id="form-demo" action="modulos/contacto/enviar.php" method="post" novalidate>
+        <label>Nombre<input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name" maxlength="120" /></label>
+        <label>WhatsApp o correo<input type="text" name="contacto" placeholder="+52 ... o tu@empresa.com" maxlength="160" /></label>
+        <!-- Campo trampa contra bots: las personas no lo ven -->
+        <input type="text" name="empresa_web" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+        <button type="submit" class="btn btn--primario btn--lg btn--bloque"><span>Quiero que me contacten</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<!-- ===================== MÓDULO: FOOTER ===================== -->
+<footer class="footer">
+  <div class="contenedor footer__fila">
+    <span class="marca"><img src="assets/img/logo-enlaza-blanco.png" alt="Enlaza S.A. de C.V. — Licencias y Soluciones Web para Call Center" width="446" height="124" /></span>    <nav aria-label="Pie de página">
+      <a href="#plataforma">Soluciones</a>
+      <a href="#proceso">Cómo trabajamos</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#">Aviso de privacidad</a>
+    </nav>
+    <span class="footer__copy">© 2026 Enlaza S.A. de C.V.</span>
+  </div>
+</footer>
+
+  <script src="base/main.js"></script>
+  <script src="modulos/header/header.js"></script>
+  <script src="modulos/hero/hero.js"></script>
+  <script src="modulos/faq/faq.js"></script>
+  <script src="modulos/contacto/contacto.js"></script>
+</body>
+</html>
